@@ -18,4 +18,4 @@ python 04_0_filter_testmols.py --input ${data_path}/03_chembl_dataset.sdf.gz  --
 # split mols in protonated/deprotonated pairs with pka values
 python 04_1_split_epik_output.py --input ${data_path}/04_chembl_dataset_filtered.sdf.gz --output ${data_path}/04_chembl_dataset_pyg.pkl
 # generate pyg input data
-python 05_data_preprocess.py --input ${data_path}/04_chembl_dataset_pyg.pkl --output ${data_path}/04_chembl_dataset_pyg.pkl
+python 05_data_preprocess.py --input ${data_path}/04_chembl_dataset_pyg.pkl --output ${data_path}/05_chembl_dataset_pyg.pkl
