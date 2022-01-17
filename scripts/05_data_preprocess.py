@@ -25,7 +25,7 @@ def main(selected_node_features: dict, selected_edge_features: dict):
     print("outputfile:", args.output)
     print("Start processing data...")
     pair_data_list = []
-    pool = mp.Pool(32)
+    pool = mp.Pool(4)
     # test if it's gzipped
     with open(args.input, "rb") as fh:
         suppl = pickle.load(fh)
