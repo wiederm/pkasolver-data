@@ -85,3 +85,12 @@ Optional parameters:
 -r: flag for retraining model at path given by --model
 
 --takes training set as pkl file and trains new model or retrains existing one. 
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+### Copyright
+
+Copyright (c) 2021, Fritz Mayr, Oliver Wieder, Marcus Wieder, Thierry Langer
