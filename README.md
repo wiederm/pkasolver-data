@@ -1,12 +1,12 @@
 Scripts and notebooks shown here are used to generate the dataset and plots for the work in [pkasolver]
 
-All functions, scripts and notebooks must be run from an environment with an installed version of `pkasolver` and its dependencies.
+All functions, scripts and notebooks must be run from an environment with an installed version of `pkasolver` and its dependencies. 
 
 # Data generation
 
 The scripts in the `scripts` folder can be used to generate the full dataset. 
 
-1. `prepare_chembl_data.sh` --contains the pipeline to download molecular data from the CHEMBL-database, predict its pka-data with Schrödinger's Epik and finally convert it the pytorch geometric graph data, to be used in the initial training.
+1. `prepare_chembl_data.sh` --contains the pipeline to download molecular data from the CHEMBL-database, predict its pka-data with Schrödinger's Epik and finally convert it the pytorch geometric graph data, to be used in the initial training. Epik is a closed-source programm for pKa-prediction and requires an active license. Feel free to replace Epik with any other tool for pKa-prediction. Be aware that this probably requires you to change some parts of the scripts, as other tools will probably not use the same output format as epic, and also you probably won't need to convert the data to the maesto (.mae) format.
 
 2. `prepare_test_data.sh` -- prepares the Novartis and Literature test data.
 
